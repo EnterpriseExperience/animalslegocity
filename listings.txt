@@ -1,0 +1,712 @@
+; File generated 05/02/2013 13:56:24
+
+PermLoadCollectionIcons
+
+;--------------------------------------------------------------------------------;
+; CHARACTER CATEGORIES
+;--------------------------------------------------------------------------------;
+; These entries is not read by the collection system as 
+; they lack the collect keyword and is instead used by the character shop 
+; Each category have a icon used by the shop and a category id (cat) which is used to 
+; determine the category belongings for each character.
+
+category CATEGORY_CIVILIAN         NPC_CitizenFemale08            cat 0                               
+category CATEGORY_COP              Class_Police                   cat 1           74, 173, 255        
+category CATEGORY_ROBBER           Class_Robber                   cat 2           133, 65, 191        
+category CATEGORY_MINER            Class_Miner                    cat 3           255, 95, 6          
+category CATEGORY_ASTRONAUT        Class_Astronaut                cat 4           230, 231, 232       
+category CATEGORY_FARMER           Class_Farmer                   cat 5           139, 197, 63        
+category CATEGORY_FIREMAN          Class_Fireman                  cat 6           215, 13, 32         
+category CATEGORY_CONSTRUCTION     Class_Construction             cat 7           255, 224, 0         
+category CATEGORY_SPECIAL01        Collect_1-10_SuperWrestler     cat 8     parent_cat 0                               
+category CATEGORY_SPECIAL02        Collect_5-06_DinosaurSuitMan   cat 9     parent_cat 0                               
+category CATEGORY_CIVILIAN_SERVICE Civilian_AirlinePilot          cat 10    parent_cat 0                               
+category CATEGORY_CHARACTER_DLC    CUSTOM_02                      cat 11    parent_cat 0     DLC                       
+
+;--------------------------------------------------------------------------------;
+; DEFAULT CHARACTERS
+;--------------------------------------------------------------------------------;
+
+; Assign default characters for each player
+
+default player 1	class generic		character Civilian_ChaseMcCain
+default player 1	class cop			character Cop
+default player 1	class robber		character Robber
+default player 1	class miner			character Miner
+default player 1	class astronaut		character Astronaut
+default player 1	class farmer		character Farmer
+default player 1	class fireman		character Fireman
+default player 1	class construction	character construction_legocityconstructionworker
+
+default player 2	class generic		character Civilian_ChaseMcCain_ALT
+default player 2	class cop			character Cop_Classic
+default player 2	class robber		character Chase_P2_Robber
+default player 2	class miner			character Buddy_Miner
+default player 2	class astronaut		character Buddy_Astronaut
+default player 2	class farmer		character Buddy_Farmer
+default player 2	class fireman		character Chase_P2_Fireman
+default player 2	class construction	character Buddy_Construction
+
+; Other characters to unlock with each class
+
+default linked		class generic		character Cop_Female_P2_Casual
+default linked		class cop			character Cop_Female_P2
+
+;--------------------------------------------------------------------------------;
+; DEFAULT CHARACTERS
+;--------------------------------------------------------------------------------;
+
+; The default characters for each player (assigned to each player above)
+
+collect COP                       token  cat 1     customiser_parts           
+collect Robber                    token  cat 2     customiser_parts           
+collect Miner                     token  cat 3     customiser_parts           
+collect Astronaut                 token  cat 4     customiser_parts           
+collect Farmer                    token  cat 5     customiser_parts           
+collect Fireman                   token  cat 6     customiser_parts           
+collect construction_legocityconstructionworker token  cat 7     customiser_parts
+collect Civilian_ChaseMcCain      token  cat 0     customiser_parts                                               
+
+collect Cop_Classic               token  cat 1     customiser_parts
+collect Chase_P2_Robber           token  cat 2     customiser_parts
+collect Buddy_Miner               token  cat 3     customiser_parts
+collect Buddy_Astronaut           token  cat 4     customiser_parts
+collect Buddy_Farmer              token  cat 5     customiser_parts
+collect Chase_P2_Fireman          token  cat 6     customiser_parts           
+collect Buddy_Construction        token  cat 7     customiser_parts
+collect Civilian_ChaseMcCain_ALT  token  cat 0     customiser_parts
+
+;--------------------------------------------------------------------------------;
+; FEMALE ALTERNATIVES
+; Female alternatives to some of the default disguises.
+; These are not defaults for either player, but are available in the
+; disguise booths as soon as the relevant class is unlocked.
+;--------------------------------------------------------------------------------;
+
+collect Cop_Female_P2             token  cat 1     customiser_parts           
+collect Cop_Female_P2_Casual      token cat 0     customiser_parts                                               
+
+;--------------------------------------------------------------------------------;
+; SHOP CHARACTERS
+;--------------------------------------------------------------------------------;
+;--------------------------------------------------------------------------------;
+; CATEGORY_CIVILIAN
+;--------------------------------------------------------------------------------;
+collect Civilian_NataliaKowalski       token  buy_in_shop      0   cat 0     customiser_parts district 17                    customiser_ignore face cheat_code qmbnvw
+collect NPC_NataliaDisguise            token  buy_in_shop      0   cat 0     customiser_parts district 14                                         cheat_code T85F3LG //PROMO
+collect Civilian_BarrySmith            token  buy_in_shop      0   cat 0     customiser_parts level 3                     customiser_ignore face cheat_code sfcvft
+collect NPC_BarrySmith_NoTrousers      token  buy_in_shop      0   cat 0     customiser_parts district 3                     customiser_ignore face cheat_code cxpnxx
+collect NPC_KarateStrong               token  buy_in_shop       0   cat 0     customiser_parts district 3                                          cheat_code qghvgc
+collect NPC_HenrikKowalski             token  buy_in_shop      0   cat 0     customiser_parts level 12                                         cheat_code tqqfqs
+collect NPC_KarateWeak                 token  buy_in_shop       0   cat 0     customiser_parts district 3                                          cheat_code F99HM9T //PROMO
+collect NPC_Leonardo                   token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code kmbjzx
+collect NPC_Kate                       token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code zzdwpp
+collect NPC_FilmStar                   token  buy_in_shop       0   cat 0     customiser_parts district 15                                         cheat_code 6XKCXY
+collect NPC_Liberace                   token  buy_in_shop      0   cat 0     customiser_parts district 11                    customiser_ignore face cheat_code kkrrwx
+collect NPC_George                     token  buy_in_shop       0   cat 0     customiser_parts district 0                                          cheat_code zrskbh
+collect NPC_Dave                       token  buy_in_shop       0   cat 0     customiser_parts district 0                                          cheat_code xmcdvk
+collect NPC_ConradPeters               token  buy_in_shop       0   cat 0     customiser_parts level 0                     customiser_ignore face cheat_code bvydxz
+collect Civilian_StreetRacer           token  buy_in_shop       0   cat 0     customiser_parts district 0                     customiser_ignore face cheat_code mpkmsx
+collect NPC_KevinJacobs                token  buy_in_shop       0   cat 0     customiser_parts district 21                                         cheat_code grghhn
+collect NPC_SurferDude                 token  buy_in_shop       0   cat 0     customiser_parts district 11                                         cheat_code qsccpg
+collect NPC_CitizenMale01              token  buy_in_shop       0   cat 0     customiser_parts district 19                                         cheat_code wbzfcv
+collect NPC_CitizenFemale01            token  buy_in_shop       0   cat 0     customiser_parts district 15                    customiser_ignore face cheat_code rfkkkw
+collect NPC_CitizenMale02              token  buy_in_shop       0   cat 0     customiser_parts district 19                                         cheat_code snkmsj
+collect NPC_CitizenFemale02            token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code vnxghy
+collect NPC_CitizenMale03              token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code tfwfvs
+collect NPC_CitizenFemale03            token  buy_in_shop       0   cat 0     customiser_parts district 18                                         cheat_code jmqfbk
+collect NPC_CitizenMale04              token  buy_in_shop       0   cat 0     customiser_parts district 21                                         cheat_code rcrkcw
+collect NPC_CitizenFemale04            token  buy_in_shop       0   cat 0     customiser_parts district 10                                         cheat_code kwkcdq
+collect NPC_CitizenMale05              token  buy_in_shop       0   cat 0     customiser_parts district 1                     customiser_ignore face cheat_code hqqnjw
+collect NPC_CitizenFemale05            token  buy_in_shop       0   cat 0     customiser_parts district 11                                         cheat_code yvwpzm
+collect NPC_CitizenMale06              token  buy_in_shop       0   cat 0     customiser_parts level 2                                          cheat_code jfjvgd
+collect NPC_CitizenFemale06            token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code cttvfm
+collect NPC_CitizenMale07              token  buy_in_shop       0   cat 0     customiser_parts district 3                                          cheat_code sndgrx
+collect NPC_CitizenFemale07            token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code wyzpkw
+collect NPC_CitizenMale08              token  buy_in_shop       0   cat 0     customiser_parts district 1                                          cheat_code fsbtbh
+collect NPC_CitizenFemale08            token  buy_in_shop       0   cat 0     customiser_parts district 0                                          cheat_code hshgqd
+collect NPC_CitizenFemale_NEW_01       token  buy_in_shop       0   cat 0     customiser_parts district 15                                        
+collect NPC_CitizenMale_NEW_01         token  buy_in_shop       0   cat 0     customiser_parts district 3                                          
+collect NPC_CitizenMale_NEW_02         token  buy_in_shop       0   cat 0     customiser_parts district 21                                          
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_CIVILIAN_SERVICE
+;--------------------------------------------------------------------------------;
+collect Civilian_CaptainBluffbeard     token  buy_in_shop      0   cat 10    customiser_parts district 11                                         cheat_code xhbxzt
+collect NPC_SubmarineCaptain           token  buy_in_shop       0   cat 10    customiser_parts level 12                                         cheat_code jxdnrz
+collect NPC_CoastGuard01               token  buy_in_shop       0   cat 10    customiser_parts district 11                                         cheat_code zqbpnb
+collect Civilian_AirlinePilot          token  buy_in_shop       0   cat 10    customiser_parts district 10                                         cheat_code qwcgsv
+collect Civilian_AirlineHostess        token  buy_in_shop       0   cat 10    customiser_parts district 10                    customiser_ignore face cheat_code fycrmp
+collect Civilian_AirlineHost           token  buy_in_shop       0   cat 10    customiser_parts district 10                    customiser_ignore face cheat_code pqbygp
+collect NPC_AirportStaff02             token  buy_in_shop       0   cat 10    customiser_parts district 10                                         cheat_code zwtqbx
+collect NPC_AirportStaff04             token  buy_in_shop       0   cat 10    customiser_parts district 10                                         cheat_code fhcfcc
+collect Mission_TaxiDriver             token  buy_in_shop       0   cat 10    customiser_parts district 0                                          cheat_code yxbbby
+collect NPC_BusDriver01                token  buy_in_shop       0   cat 10    customiser_parts district 21                    customiser_ignore face cheat_code krggjh
+collect Civilian_TrainDriver           token  buy_in_shop       0   cat 10    customiser_parts district 2                     customiser_ignore face cheat_code czqgpz
+collect NPC_TrainDriver01              token  buy_in_shop       0   cat 10    customiser_parts district 0                                          cheat_code pwbqtq
+collect Mission_PizzaDeliveryBoy       token  buy_in_shop       0   cat 10    customiser_parts district 10                                         cheat_code dwtwkm
+collect Civilian_Chef                  token  buy_in_shop       0   cat 10    customiser_parts district 13                    customiser_ignore face cheat_code yxjrtc
+collect NPC_Waitress                   token  buy_in_shop       0   cat 10    customiser_parts district 13                                         cheat_code tkkdhy
+collect NPC_BankManager                token  buy_in_shop       0   cat 10    customiser_parts level 4                                          cheat_code hsxtvs
+collect NPC_Doctor01                   token  buy_in_shop       0   cat 10    customiser_parts district 17                                         cheat_code tfnxms
+collect NPC_Doctor03                   token  buy_in_shop       0   cat 10    customiser_parts district 17                                         cheat_code psxgch
+collect Mission_Paramedic              token  buy_in_shop       0   cat 10    customiser_parts district 13                                         cheat_code rhqmmk
+collect NPC_AnchorMan                  token  buy_in_shop       0   cat 10    customiser_parts district 0                                          cheat_code bqkbcq
+collect NPC_RadioSky                   token  buy_in_shop       0   cat 10    customiser_parts district 14                                         cheat_code ykqbsk
+collect NPC_RadioDJ01                  token  buy_in_shop       0   cat 10    customiser_parts district 9                                          cheat_code pyqdwf
+collect NPC_RadioDJ02                  token  buy_in_shop       0   cat 10    customiser_parts district 9                                          cheat_code gxvmbd
+collect NPC_TvReporter                 token  buy_in_shop       0   cat 10    customiser_parts district 0                                          cheat_code kyvjqn
+collect NPC_RadioNewsReader            token  buy_in_shop       0   cat 10    customiser_parts district 15                                         cheat_code bsxmxx
+collect NPC_PressPhotographer01        token  buy_in_shop       0   cat 10    customiser_parts district 8                                          cheat_code rmrqfn
+collect Mission_Papperazzi             token  buy_in_shop       0   cat 10    customiser_parts district 19                                         cheat_code wfnzzm
+collect Civilian_Bouncer               token  buy_in_shop       0   cat 10    customiser_parts district 11                    customiser_ignore face cheat_code pzcwvk
+collect Civilian_MailMan               token  buy_in_shop       0   cat 10    customiser_parts district 0                     customiser_ignore face cheat_code tynczf
+collect NPC_CopCleaner                 token  buy_in_shop       0   cat 10    customiser_parts district 21                                         cheat_code zpsrpb
+collect Civilian_GarbageMan            token  buy_in_shop       0   cat 10    customiser_parts district 9                     customiser_ignore face cheat_code cqhbsr
+collect Civilian_PetrolWorker          token  buy_in_shop       0   cat 10    customiser_parts district 2                     customiser_ignore face cheat_code vvbkbh
+collect NPC_Cleaner01                  token  buy_in_shop       0   cat 10    customiser_parts district 10                                         cheat_code gtycmf
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_COP
+;--------------------------------------------------------------------------------;
+collect Class_PoliceUndercover         token  buy_in_shop          0   cat 1     customiser_parts                                     cheat_code vpfpnq
+collect Buddy_PoliceUndercover         token  buy_in_shop          0   cat 1     customiser_parts                                     cheat_code vpfpnq // To be unlocked at the same point in story as Class_PoliceUndercover
+collect Cop_Female_P2_Undercover       token  buy_in_shop          0   cat 1     customiser_parts                                     cheat_code vpfpnq // To be unlocked at the same point in story as Class_PoliceUndercover
+collect NPC_ChaseHBear                 token  buy_in_shop      0   cat 1     customiser_parts level 6                             cheat_code rpysjj
+collect Chase_P2_Suit                  token  buy_in_shop      0   cat 1     customiser_parts district 14                         
+collect Cop_FrankHoney                 token  buy_in_shop     0   cat 1     customiser_parts district 4                                          cheat_code mczmhb
+collect Cop_FrankHoney_Speedo          token  buy_in_shop      0   cat 1     customiser_parts district 11                                         cheat_code wzzhqk
+collect Cop_MarionDunby                token  buy_in_shop     0   cat 1     customiser_parts                                     cheat_code fjpkgt
+collect Cop_DukeHuckleberry            token  buy_in_shop     0   cat 1     customiser_parts district 3                                          cheat_code fvgwbz
+collect Cop_ElliePhillips              token  buy_in_shop     0   cat 1     customiser_parts district 7                                          cheat_code tfqsvv
+collect Cop_PoliceOfficer_NEW          token  buy_in_shop      0   cat 1     customiser_parts district 16                                    
+collect HelicopterPilot_NEW            token  buy_in_shop      0   cat 1     customiser_parts district 1                                    
+collect Cop_Chuck                      token  buy_in_shop      0   cat 1     customiser_parts                                     cheat_code mssmjs
+collect Civilian_MayorGleeson          token  buy_in_shop      0   cat 1     customiser_parts district 16                                         cheat_code ncrhyy
+collect Civilian_BeaHeckerson          token  buy_in_shop      0   cat 1     customiser_parts district 2                                          cheat_code mwddnr
+collect NPC_Cop05                      token  buy_in_shop      0   cat 1     customiser_parts district 4                     customiser_ignore face cheat_code vgwhnv
+collect NPC_PatPatterson               token  buy_in_shop      0   cat 1     customiser_parts district 19                                         cheat_code rqdvgg
+collect NPC_CopTraining01              token  buy_in_shop      0   cat 1     customiser_parts district 0                     customiser_ignore face cheat_code wnttsp
+collect NPC_CopTraining02              token  buy_in_shop      0   cat 1     customiser_parts district 11                    customiser_ignore face cheat_code rqndvr
+collect Cop_DirtyBarry                 token  buy_in_shop     0   cat 1     customiser_parts district 0                                          cheat_code czjnrr
+collect Cop_Studski                    token  buy_in_shop     0   cat 1     customiser_parts level 6                     customiser_ignore face cheat_code xqbxtv
+collect Cop_Clutch                     token  buy_in_shop     0   cat 1     customiser_parts district 14                    customiser_ignore face cheat_code mhfxwq
+collect Cop_Brickett                   token  buy_in_shop     0   cat 1     customiser_parts district 3                                          cheat_code qsdsyj
+collect Cop_Blubs                      token  buy_in_shop     0   cat 1     customiser_parts district 11                    customiser_ignore face cheat_code tkctvb
+collect Cop_DaMumbo                    token  buy_in_shop     0   cat 1     customiser_parts district 5                                          cheat_code jqttmw
+collect Cop_Lagney                     token  buy_in_shop     0   cat 1     customiser_parts district 14                    customiser_ignore face cheat_code xcymzq
+collect Cop_Cacey                      token  buy_in_shop     0   cat 1     customiser_parts district 15                    customiser_ignore face cheat_code pwbjdc
+collect Cop_HoraceCone                 token  buy_in_shop     0   cat 1     customiser_parts district 16                                         cheat_code psjpws
+collect Cop_DoorlockHomes              token  buy_in_shop     0   cat 1     customiser_parts district 16                                         cheat_code nqrzfj
+collect Cop_DrWhatsit                  token  buy_in_shop     0   cat 1     customiser_parts district 16                                         cheat_code zzhhsn
+collect Cop_PrisonGuard                token  buy_in_shop      0   cat 1     customiser_parts district 8                                          cheat_code wgvvkr
+collect NPC_SecurityGuard01            token  buy_in_shop      0   cat 1     customiser_parts district 7                                          cheat_code cfnzvf
+collect NPC_SecurityGuard02            token  buy_in_shop      0   cat 1     customiser_parts district 0                     customiser_ignore face cheat_code gqbzsm
+collect Cop_ForestRanger               token  buy_in_shop      0   cat 1     customiser_parts district 3                     customiser_ignore face cheat_code qhsbrh
+collect NPC_ForestRanger01             token  buy_in_shop      0   cat 1     customiser_parts district 3                                          cheat_code spyxkj
+collect Cop_LEGOCityCopMale            token  buy_in_shop      0   cat 1     customiser_parts district 14                    customiser_ignore face cheat_code fgkggz
+collect Cop_LEGOCityCopFemale          token  buy_in_shop      0   cat 1     customiser_parts district 21                    customiser_ignore face cheat_code mbghyn
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ROBBER
+;--------------------------------------------------------------------------------;
+collect Robber_NEW                     token  buy_in_shop      0   cat 2     customiser_parts district 9                                          
+collect Robber_ClownRobber             token  buy_in_shop      0   cat 2     customiser_parts district 0                                          cheat_code rpftft
+collect NPC_ClownRobber01              token  buy_in_shop      0   cat 2     customiser_parts district 1                                          cheat_code rpzggn
+collect NPC_ClownRobber02              token  buy_in_shop      0   cat 2     customiser_parts district 10                                         cheat_code pvjndv
+collect Robber_ForrestBlackwell        token  buy_in_shop     0   cat 2     customiser_parts level 13                                         cheat_code wnmmcp
+collect Robber_ForrestBlackwellTuxedo  token  buy_in_shop     0   cat 2     customiser_parts level 9                                          cheat_code ynzhdh
+collect Robber_ForrestBlackwellFormal  token  buy_in_shop     0   cat 2     customiser_parts district 18                                         cheat_code sjngrd
+collect NPC_SecurityBlackwell02        token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code qqcycs
+collect Robber_BlackwellHenchman       token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code rqyxpr
+collect Robber_BlackwellSecurityGuard  token  buy_in_shop      0   cat 2     customiser_parts level 13                                         cheat_code jwysgg
+collect NPC_PAJamesCurry               token  buy_in_shop      0   cat 2     customiser_parts district 19                                         cheat_code svbpxw
+collect Robber_RexFuryShirt            token  buy_in_shop    0   cat 2     customiser_parts level 14                                                   
+collect Robber_RexFury                 token  buy_in_shop    0   cat 2     customiser_parts district 3                                                    
+collect Robber_JimmyGrossmanRexGang    token  buy_in_shop      0   cat 2     customiser_parts level 10                                         cheat_code rdntmc
+collect Robber_EddieJoJoRexGang        token  buy_in_shop      0   cat 2     customiser_parts district 19                                         cheat_code zynqpj
+collect Robber_SpikeyDonRexGang        token  buy_in_shop      0   cat 2     customiser_parts level 2                                          cheat_code bypjph
+collect NPC_RexGang01                  token  buy_in_shop      0   cat 2     customiser_parts district 6                                          cheat_code fjjfzy
+collect NPC_RexGang02                  token  buy_in_shop      0   cat 2     customiser_parts district 13                                         cheat_code ftxkbs
+collect Robber_VinniePappalardo        token  buy_in_shop     0   cat 2     customiser_parts level 10                                         cheat_code kqsbdd
+collect Robber_VinniePappalardoTracksuit token  buy_in_shop     0   cat 2     customiser_parts district 18                                         cheat_code psznjb
+collect Robber_VinniePappalardo_Clown  token  buy_in_shop     0   cat 2     customiser_parts district 17                                         cheat_code vtmdwc
+collect Robber_MoeDeLuca               token  buy_in_shop      0   cat 2     customiser_parts level 9                                          cheat_code gnfxdw
+collect NPC_SalvatoreCalzone           token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code cfqjfs
+collect NPC_CarloJerome                token  buy_in_shop      0   cat 2     customiser_parts district 18                    customiser_ignore face cheat_code bkgtmx
+collect NPC_CarloJeromeCone            token  buy_in_shop      0   cat 2                district 13                                         cheat_code jgcscm
+collect Robber_LuckyPeteVinnieGang     token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code zvxwkx
+collect Robber_PaulieBlindfoldsVinnieGang token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code drhsgr
+collect Robber_TonyOneTimeVinnieGang   token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code vvpyjg
+collect NPC_MikeySpoilers              token  buy_in_shop      0   cat 2     customiser_parts district 18                                         cheat_code wnngyg
+collect Robber_ChanChuang              token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code xrhbzr
+collect Robber_FengChanGang            token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code wmybwd
+collect Robber_LiChanGang              token  buy_in_shop      0   cat 2     customiser_parts district 14                    customiser_ignore hair cheat_code xcjhqd
+collect Robber_FuChanGang              token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code drkjzs
+collect NPC_OldQiang                   token  buy_in_shop      0   cat 2     customiser_parts                                     cheat_code vjcgbc
+collect Robber_BuckyButler             token  buy_in_shop      0   cat 2     customiser_parts district 21                    customiser_ignore face cheat_code xzjtky
+collect Robber_ChanGangStrong          token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code bbnssb
+collect NPC_ChanGang01                 token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code dvvyxw
+collect NPC_ChanGang02                 token  buy_in_shop      0   cat 2     customiser_parts district 14                                         cheat_code nqcgxh
+collect Robber_GovernorStonewall       token  buy_in_shop      0   cat 2     customiser_parts district 8                                          cheat_code hqpdxd
+collect Robber_BlueWhittaker           token  buy_in_shop      0   cat 2     customiser_parts level 1                                          cheat_code mfbycf
+collect Robber_SnakesSquealer          token  buy_in_shop      0   cat 2     customiser_parts level 0                                          cheat_code rkstrj
+collect Robber_Prisoner                token  buy_in_shop      0   cat 2     customiser_parts level 1                                          cheat_code psptdy
+collect NPC_Robber04                   token  buy_in_shop      0   cat 2     customiser_parts district 0                     customiser_ignore face cheat_code kcwkvj
+collect Robber_Strong                  token  buy_in_shop      0   cat 2     customiser_parts district 8                                          cheat_code gvsbyw
+collect NPC_Robber02                   token  buy_in_shop      0   cat 2     customiser_parts district 2                                          cheat_code mwpmcm
+collect NPC_Robber01                   token  buy_in_shop      0   cat 2     customiser_parts district 8                                          cheat_code sgssbv
+collect NPC_RobberYFronts              token  buy_in_shop      0   cat 2     customiser_parts district 1                                          cheat_code krbgbk
+collect NPC_RobberYFronts2             token  buy_in_shop      0   cat 2     customiser_parts district 8                                          cheat_code cbjmmq
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_MINER
+;--------------------------------------------------------------------------------;
+collect Miner_Manager                  token  buy_in_shop      0   cat 3     customiser_parts                                     cheat_code tptwtn
+collect Miner_MiningTechnician         token  buy_in_shop      0   cat 3     customiser_parts district 2                                          cheat_code fjfwst
+collect Miner_Clockwatcher             token  buy_in_shop      0   cat 3     customiser_parts                                     cheat_code szjkbp
+collect Miner_Miner01                  token  buy_in_shop      0   cat 3     customiser_parts district 3                                          cheat_code mxmvjm
+collect NPC_Miner01                    token  buy_in_shop      0   cat 3     customiser_parts district 13                                         cheat_code wqgbks
+collect NPC_Miner02                    token  buy_in_shop      0   cat 3     customiser_parts district 3                                          cheat_code vthmdn
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect NPC_MissionController01        token  buy_in_shop      0   cat 4     customiser_parts district 9                                          cheat_code fshymh
+collect Astronaut_Scientist            token  buy_in_shop      0   cat 4     customiser_parts level 5                                          cheat_code hddrhy
+collect Astronaut_ForrestBlackwell     token  buy_in_shop      0   cat 4     customiser_parts district 9                                          cheat_code pkbwty
+collect Astronaut_EvilAstronaut        token  buy_in_shop      0   cat 4     customiser_parts level 14                                         cheat_code zbxnwb
+collect Astronaut_EvilAstronaut02      token  buy_in_shop      0   cat 4     customiser_parts district 9                                          cheat_code mjjrjp
+collect Astronaut_HenrikKowalski       token  buy_in_shop      0   cat 4     customiser_parts district 1                                          cheat_code xwdhjt
+collect Astronaut_RexFury              token  buy_in_shop      0   cat 4     customiser_parts                                     cheat_code mszjsj
+collect Astronaut_Jetpack              token  buy_in_shop      0   cat 4     customiser_parts district 16                                         cheat_code twnjnq
+collect NPC_MissionController02        token  buy_in_shop      0   cat 4     customiser_parts district 9                                          cheat_code yfxmnx
+collect NPC_Astronaut02                token  buy_in_shop      0   cat 4     customiser_parts district 16                                         cheat_code ffbvtm
+collect NPC_Scientist01                token  buy_in_shop      0   cat 4     customiser_parts district 9                                          cheat_code pnqbjt
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_FARMER
+;--------------------------------------------------------------------------------;
+collect Farmer_JethroHayes             token  buy_in_shop      0   cat 5     customiser_parts                                     cheat_code qyrrtx
+collect Farmer_FarmWorker              token  buy_in_shop      0   cat 5     customiser_parts district 2                                          cheat_code zndqmh
+collect Farmer_Hillbilly               token  buy_in_shop      0   cat 5     customiser_parts district 2                                          cheat_code ghybmp
+collect NPC_Farmer01                   token  buy_in_shop      0   cat 5     customiser_parts district 2                                          cheat_code rmxrwc
+collect NPC_Farmer03                   token  buy_in_shop      0   cat 5     customiser_parts                                     cheat_code jggwhd
+collect NPC_Farmer02                   token  buy_in_shop      0   cat 5     customiser_parts district 13                                         cheat_code wnkqqm
+collect NPC_Activist01                 token  buy_in_shop       0   cat 5     customiser_parts district 0                     customiser_ignore face cheat_code cqdhjs
+collect NPC_Activist02                 token  buy_in_shop       0   cat 5     customiser_parts district 11                    customiser_ignore face cheat_code gdnkyd
+collect NPC_Activist03                 token  buy_in_shop       0   cat 5     customiser_parts district 7                                          cheat_code xcdddj
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_FIREMAN
+;--------------------------------------------------------------------------------;
+collect NPC_Fireman04                  token  buy_in_shop      0   cat 6     customiser_parts level 8                                          cheat_code mvfmgw
+collect NPC_Fireman05                  token  buy_in_shop      0   cat 6     customiser_parts district 3                                          cheat_code fbvhyr
+collect Fireman_CorneliusBurns         token  buy_in_shop      0   cat 6     customiser_parts                                     cheat_code tgdmmd
+collect Fireman_RamonGutierrez-Delgardo token  buy_in_shop      0   cat 6     customiser_parts level 8                                          cheat_code cmpsqx
+collect NPC_Fireman02                  token  buy_in_shop      0   cat 6     customiser_parts district 2                                          cheat_code srgxhq
+collect Fireman_LEGOCityFireman        token  buy_in_shop      0   cat 6     customiser_parts district 19                                         cheat_code ttdgkw
+collect Fireman_Forest                 token  buy_in_shop      0   cat 6     customiser_parts                                     cheat_code gdmwdx
+collect NPC_Fireman01                  token  buy_in_shop      0   cat 6     customiser_parts district 12                                         cheat_code ntbbjs
+collect NPC_Fireman03                  token  buy_in_shop      0   cat 6     customiser_parts district 14                                         cheat_code qhqcht
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_CONSTRUCTION
+;--------------------------------------------------------------------------------;
+collect Construction_AlbrechtSpindlerouter token  buy_in_shop      0   cat 7     customiser_parts                                     cheat_code tjvmcq
+collect Construction_ConstructionForeman token  buy_in_shop      0   cat 7     customiser_parts level 11                    customiser_ignore face cheat_code xcbcwj
+collect Construction_Worker01          token  buy_in_shop      0   cat 7     customiser_parts                customiser_ignore face cheat_code yywnxn
+collect Construction_Worker02          token  buy_in_shop      0   cat 7     customiser_parts level 11                                         cheat_code qxvjxq
+collect Construction_Worker03          token  buy_in_shop      0   cat 7     customiser_parts district 14                    customiser_ignore face cheat_code mtpjkg
+collect Construction_Worker04          token  buy_in_shop      0   cat 7     customiser_parts district 1                                          cheat_code cmmvfq
+collect Civilian_HarbourWorker         token  buy_in_shop      0   cat 7     customiser_parts district 1                     customiser_ignore face cheat_code bzqnyr
+collect Civilian_DocksForeman          token  buy_in_shop      0   cat 7     customiser_parts district 1                     customiser_ignore face cheat_code xpyjhk
+collect Civilian_DocksCraneDriver      token  buy_in_shop      0   cat 7     customiser_parts district 1                                          cheat_code chvrhh
+collect Civilian_GarageWorker          token  buy_in_shop      0   cat 7     customiser_parts district 1                     customiser_ignore face cheat_code qgkxbv
+collect Mission_TowTruckDriver         token  buy_in_shop      0   cat 7     customiser_parts district 1                                          cheat_code zgghpq
+collect Civilian_MaintenanceWorker     token  buy_in_shop      0   cat 7     customiser_parts district 7                     customiser_ignore face cheat_code xyzndx
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL01
+;--------------------------------------------------------------------------------;
+collect Collect_1-01_TribalHunter      token  buy_in_shop      0   cat 8     customiser_parts district 8                     customiser_ignore face cheat_code zpnxwp
+collect Collect_1-02_Cheerleader       token  buy_in_shop      0   cat 8     customiser_parts district 19                    customiser_ignore face cheat_code xcnjrr
+collect Collect_1-03_Caveman           token  buy_in_shop      0   cat 8     customiser_parts level 7                                          cheat_code qrtbqh
+collect Collect_1-04_CircusClown       token  buy_in_shop      0   cat 8     customiser_parts district 17                    customiser_ignore face cheat_code thxxnc
+collect Collect_1-05_Zombie            token  buy_in_shop      0   cat 8     customiser_parts district 19                                         cheat_code gkqwnd
+collect Collect_1-06_Skater            token  buy_in_shop      0   cat 8     customiser_parts district 13                    customiser_ignore face cheat_code mdcrtw
+collect Collect_1-07_Robot             token  buy_in_shop      0   cat 8                district 17                                         cheat_code rxrmmy
+collect Collect_1-08_DemolitionDummy   token  buy_in_shop      0   cat 8     customiser_parts district 0                     customiser_ignore face cheat_code pvnsdc
+collect Collect_1-09_Magician          token  buy_in_shop      0   cat 8     customiser_parts district 19                                         cheat_code djnrnq
+collect Collect_1-10_SuperWrestler     token  buy_in_shop      0   cat 8     customiser_parts                                     cheat_code jzjqbt
+collect Collect_1-11_Nurse             token  buy_in_shop      0   cat 8     customiser_parts district 13                                         cheat_code xbnhyk
+collect Collect_1-12_Ninja             token  buy_in_shop      0   cat 8     customiser_parts district 15                    customiser_ignore face cheat_code THQYGSK //PROMO
+collect Collect_1-13_Spaceman          token  buy_in_shop      0   cat 8     customiser_parts district 9                     customiser_ignore face cheat_code qwkyvn
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect Collect_1-13_Spaceman          token  buy_in_shop      0   cat 4     no_progress                     customiser_ignore face cheat_code qwkyvn
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL01
+;--------------------------------------------------------------------------------;
+collect Collect_1-14_Forestman         token  buy_in_shop      0   cat 8     customiser_parts district 3                     customiser_ignore face cheat_code rhzpcc
+collect Collect_1-15_DeepSeaDiver      token  buy_in_shop      0   cat 8     customiser_parts district 17                    customiser_ignore face cheat_code dspmpb
+collect Collect_1-16_Cowboy            token  buy_in_shop      0   cat 8     customiser_parts district 21                    customiser_ignore face cheat_code nkrdhv
+collect Collect_2-02_MaracaMan         token  buy_in_shop      0   cat 8     customiser_parts district 11                                         cheat_code jcpzgj
+collect Collect_2-09_SpartanWarrior    token  buy_in_shop      0   cat 8     customiser_parts district 19                                         cheat_code fjfkwk
+collect Collect_2-10_Ringmaster        token  buy_in_shop      0   cat 8     customiser_parts district 15                    customiser_ignore face cheat_code vpgmkn
+collect Collect_2-11_Vampire           token  buy_in_shop      0   cat 8     customiser_parts district 2                                          cheat_code tvcrtp
+collect Collect_2-12_TrafficCop        token  buy_in_shop      0   cat 8     customiser_parts district 15                    customiser_ignore face cheat_code rfcszx
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_COP
+;--------------------------------------------------------------------------------;
+collect Collect_2-12_TrafficCop        token  buy_in_shop      0   cat 1     no_progress                     customiser_ignore face cheat_code rfcszx
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL01
+;--------------------------------------------------------------------------------;
+collect Collect_2-13_Explorer          token  buy_in_shop      0   cat 8     customiser_parts district 7                                          cheat_code drkynb
+collect Collect_2-14_Lifeguard         token  buy_in_shop      0   cat 8     customiser_parts district 13                    customiser_ignore face cheat_code qhfgrr
+collect Collect_2-15_Mime              token  buy_in_shop      0   cat 8     customiser_parts district 15                    customiser_ignore face cheat_code dkbjrz
+collect Collect_2-01_WeightLifter      token  buy_in_shop      0   cat 8     customiser_parts district 17                    customiser_ignore face cheat_code xzwnns
+collect Collect_2-03_PopStar           token  buy_in_shop      0   cat 8     customiser_parts                                     cheat_code T6SPJUT //PROMO
+collect Collect_2-04_Skier             token  buy_in_shop      0   cat 8     customiser_parts district 4                     customiser_ignore face cheat_code qvbnms
+collect Collect_2-05_DiscoDude         token  buy_in_shop      0   cat 8     customiser_parts district 19                    customiser_ignore face cheat_code whtdyx
+collect Collect_2-06_KarateMaster      token  buy_in_shop      0   cat 8     customiser_parts level 3                     customiser_ignore face cheat_code qgzmzt
+collect Collect_2-07_Surfer            token  buy_in_shop      0   cat 8     customiser_parts district 11                    customiser_ignore face cheat_code fpdrcf
+collect Collect_2-08_Pharaoh           token  buy_in_shop      0   cat 8     customiser_parts district 21                                         cheat_code DPZ8DBS //PROMO
+collect Collect_3-04_Fisherman         token  buy_in_shop      0   cat 8     customiser_parts district 13                                         cheat_code gvqpyz
+collect Collect_3-03_Pilot             token  buy_in_shop      0   cat 8     customiser_parts district 10                    customiser_ignore face cheat_code dgwfdh
+collect Collect_3-01_TribalChief       token  buy_in_shop      0   cat 8     customiser_parts district 17                    customiser_ignore face cheat_code vkmfhp
+collect Collect_3-02_SamuraiWarrior    token  buy_in_shop      0   cat 8     customiser_parts district 3                                          cheat_code 4HRV3AL //PROMO
+collect Collect_3-06_Snowboarder       token  buy_in_shop      0   cat 8     customiser_parts district 3                     customiser_ignore face cheat_code ztzjdn
+collect Collect_3-05_SpaceVillain      token  buy_in_shop      0   cat 8                level 5                                          cheat_code vzygjx
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect Collect_3-05_SpaceVillain      token  buy_in_shop      0   cat 4     no_progress                                          cheat_code vzygjx
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL01
+;--------------------------------------------------------------------------------;
+collect Collect_3-11_SumoWrestler      token  buy_in_shop      0   cat 8     customiser_parts district 17                                         cheat_code jdntsw
+collect Collect_3-13_Mummy             token  buy_in_shop      0   cat 8     customiser_parts level 7                                          cheat_code krxfgq
+collect Collect_3-10_Elf               token  buy_in_shop      0   cat 8     customiser_parts district 3                                          cheat_code ttmvtw
+collect Collect_3-14_TennisPlayer      token  buy_in_shop      0   cat 8     customiser_parts district 0                     customiser_ignore face cheat_code ydkkwg
+collect Collect_3-08_RaceCarDriver     token  buy_in_shop      0   cat 8     customiser_parts district 1                     customiser_ignore face cheat_code JYHJJ6R //PROMO
+collect Collect_3-16_GorillaSuitGuy    token  buy_in_shop      0   cat 8     customiser_parts district 17                    customiser_ignore face cheat_code RFRDL8C //PROMO
+collect Collect_3-12_Alien             token  buy_in_shop      0   cat 8                                                          cheat_code rzbngp
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect Collect_3-12_Alien             token  buy_in_shop      0   cat 4     no_progress                                          cheat_code rzbngp
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL01
+;--------------------------------------------------------------------------------;
+collect Collect_3-07_HulaDancer        token  buy_in_shop      0   cat 8     customiser_parts district 11                    customiser_ignore face cheat_code dvcgcz
+collect Collect_3-09_Rapper            token  buy_in_shop      0   cat 8     customiser_parts district 0                                          cheat_code hbgbph
+collect Collect_3-15_BaseballPlayer    token  buy_in_shop      0   cat 8     customiser_parts district 0                     customiser_ignore face cheat_code 5MCPHUL //PROMO
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL02
+;--------------------------------------------------------------------------------;
+collect Collect_4-10_Musketeer         token  buy_in_shop      0   cat 9     customiser_parts district 13                                         cheat_code mqykbp
+collect Collect_4-14_PunkRocker        token  buy_in_shop      0   cat 9     customiser_parts district 14                                         cheat_code kqgpsg
+collect Collect_4-05_SurferGirl        token  buy_in_shop      0   cat 9     customiser_parts district 11                                         cheat_code vckccn
+collect Collect_4-01_Viking            token  buy_in_shop      0   cat 9     customiser_parts district 11                                         cheat_code shsfhm
+collect Collect_4-11_TheMonster        token  buy_in_shop      0   cat 9     customiser_parts district 2                                          cheat_code kytjbb
+collect Collect_4-02_HockeyPlayer      token  buy_in_shop      0   cat 9     customiser_parts district 7                     customiser_ignore face cheat_code kkzgjf
+collect Collect_4-06_StreetSkater      token  buy_in_shop      0   cat 9     customiser_parts district 16                                         cheat_code cfnmsw
+collect Collect_4-09_Sailor            token  buy_in_shop      0   cat 9     customiser_parts district 13                                         cheat_code jzffdq
+collect Collect_4-07_SoccerPlayer      token  buy_in_shop      0   cat 9     customiser_parts district 18                                         cheat_code EQ23SYE //PROMO
+collect Collect_4-03_Werewolf          token  buy_in_shop      0   cat 9     customiser_parts district 0                                          cheat_code WK7RBFT //PROMO
+collect Collect_4-13_HazmatGuy         token  buy_in_shop      0   cat 9     customiser_parts district 1                                          cheat_code pkjxdx
+collect Collect_4-04_Artist            token  buy_in_shop      0   cat 9     customiser_parts district 15                    customiser_ignore face cheat_code qzfnpy
+collect Collect_4-12_IceSkater         token  buy_in_shop      0   cat 9     customiser_parts district 0                                          cheat_code wmyxdv
+collect Collect_4-08_CrazyScientist    token  buy_in_shop      0   cat 9     customiser_parts district 11                                         cheat_code rrfrwn
+collect Collect_5-13_UniversityGraduate token  buy_in_shop      0   cat 9     customiser_parts district 16                                         cheat_code gtbycd
+collect Collect_5-12_Murmillo          token  buy_in_shop      0   cat 9     customiser_parts district 21                                         cheat_code ggtrhm
+collect Collect_5-09_GrenadierGuard    token  buy_in_shop      0   cat 9     customiser_parts district 16                                         cheat_code rvjmwh
+collect Collect_5-07_Eskimo            token  buy_in_shop      0   cat 9     customiser_parts district 11                                         cheat_code kwskmz
+collect Collect_5-03_CaveWoman         token  buy_in_shop      0   cat 9     customiser_parts district 2                                          cheat_code yhwkqs
+collect Collect_5-06_DinosaurSuitMan   token  buy_in_shop      0   cat 9     customiser_parts district 19                                         cheat_code zfyjkg
+collect Collect_5-14_Zookeeper         token  buy_in_shop      0   cat 9     customiser_parts district 13                                         cheat_code vwyxrr
+collect Collect_5-10_Lumberjack        token  buy_in_shop      0   cat 9     customiser_parts district 2                                          cheat_code smrzwn
+collect Collect_5-04_FitnessDancer     token  buy_in_shop      0   cat 9     customiser_parts district 5                                          cheat_code rvcjws
+collect Collect_5-05_Detective         token  buy_in_shop      0   cat 9     customiser_parts district 0                                          cheat_code jkygjg
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_COP
+;--------------------------------------------------------------------------------;
+collect Collect_5-05_Detective         token  buy_in_shop      0   cat 1     no_progress                                          cheat_code jkygjg
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL02
+;--------------------------------------------------------------------------------;
+collect Collect_5-02_Boxer             token  buy_in_shop      0   cat 9     customiser_parts district 8                                          cheat_code hbnncp
+collect Collect_5-08_Gangster          token  buy_in_shop      0   cat 9     customiser_parts district 18                                         cheat_code jqzfqt
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ROBBER
+;--------------------------------------------------------------------------------;
+collect Collect_5-08_Gangster          token  buy_in_shop      0   cat 2     no_progress                                          cheat_code jqzfqt
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL02
+;--------------------------------------------------------------------------------;
+collect Collect_5-11_MaleSnowboarder   token  buy_in_shop      0   cat 9     customiser_parts district 18                    customiser_ignore face cheat_code xfwsxj
+collect Collect_6-01_GreyAlien         token  buy_in_shop      0   cat 9                district 9                                          cheat_code 8JQBUKE //PROMO
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect Collect_6-01_GreyAlien         token  buy_in_shop      0   cat 4     no_progress                                          cheat_code 8JQBUKE //PROMO
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL02
+;--------------------------------------------------------------------------------;
+collect Collect_6-07_Highlander        token  buy_in_shop      0   cat 9     customiser_parts district 2                                          cheat_code vfhfrw
+collect Collect_6-14_Sleepy            token  buy_in_shop      0   cat 9     customiser_parts district 0                                          cheat_code mhwmpy
+collect Collect_6-02_Bandit            token  buy_in_shop      0   cat 9     customiser_parts                                     cheat_code nbkryb
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ROBBER
+;--------------------------------------------------------------------------------;
+collect Collect_6-02_Bandit            token  buy_in_shop      0   cat 2     no_progress                                          cheat_code nbkryb
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_SPECIAL02
+;--------------------------------------------------------------------------------;
+collect Collect_6-11_Robot             token  buy_in_shop      0   cat 9                district 19                                         cheat_code xykqwt
+collect Collect_6-10_Minotaur          token  buy_in_shop      0   cat 9                district 15                                         cheat_code FLYAHGY //PROMO
+collect Collect_6-12_Roman             token  buy_in_shop      0   cat 9     customiser_parts district 21                                         cheat_code B2L8U2E //PROMO
+collect Collect_6-16_Surgeon           token  buy_in_shop      0   cat 9     customiser_parts district 17                                         cheat_code vsvkpr
+collect Collect_6-13_FemaleSkater      token  buy_in_shop      0   cat 9     customiser_parts district 10                                         cheat_code xfcgqg
+collect Collect_6-05_Galaxy            token  buy_in_shop      0   cat 9     customiser_parts level 4                                          cheat_code vpxbzf
+collect Collect_6-03_Butcher           token  buy_in_shop      0   cat 9     customiser_parts district 8                                          cheat_code rzhpbz
+collect Collect_6-09_Mechanic          token  buy_in_shop      0   cat 9     customiser_parts district 1                                          cheat_code jgfbhp
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_CIVILIAN
+;--------------------------------------------------------------------------------;
+collect Custom_01                      token  buy_in_shop       0   cat 0     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_COP
+;--------------------------------------------------------------------------------;
+collect Custom_02                      token  buy_in_shop          0   cat 1     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ROBBER
+;--------------------------------------------------------------------------------;
+collect Custom_03                      token  buy_in_shop          0   cat 2     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_MINER
+;--------------------------------------------------------------------------------;
+collect Custom_04                      token  buy_in_shop          0   cat 3     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_ASTRONAUT
+;--------------------------------------------------------------------------------;
+collect Custom_05                      token  buy_in_shop          0   cat 4     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_FARMER
+;--------------------------------------------------------------------------------;
+collect Custom_06                      token  buy_in_shop          0   cat 5     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_FIREMAN
+;--------------------------------------------------------------------------------;
+collect Custom_07                      token  buy_in_shop          0   cat 6     no_progress                                                    
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_CONSTRUCTION
+;--------------------------------------------------------------------------------;
+collect Custom_08                      token  buy_in_shop          0   cat 7     no_progress                                                    
+
+collect Custom_Dummy no_progress customiser_parts
+
+
+;--------------------------------------------------------------------------------;
+; VEHICLES
+;--------------------------------------------------------------------------------;
+;VEHICLE_LIST_START
+
+;--------------------------------------------------------------------------------;
+; VEHICLE CATEGORIES
+;--------------------------------------------------------------------------------;
+; These entries is not read by the collection system as 
+; they lack the collect keyword and is instead used by the vehicle shop 
+; Each category have a icon used by the shop and a category id (cat) which is used to 
+; determine the category belongings for each vehicle. Each category also have a keyword 
+; for where they are eligible to use and in turn determine their drop point (ROAD, SEA, AIR)
+
+vehiclecategory CATEGORY_EMERGENCY        POLICE_TROOPER                 cat 12    ROAD      
+vehiclecategory CATEGORY_WORKER           Industrial_Dumper              cat 13    ROAD      
+vehiclecategory CATEGORY_COMPACT          Smallcars_Pumpkin              cat 14    ROAD      
+vehiclecategory CATEGORY_HEAVY            Van_Gotland                    cat 15    ROAD      
+vehiclecategory CATEGORY_PERFORMANCE      Sportscars_Drakonas            cat 16    ROAD      
+vehiclecategory CATEGORY_BIKES            Motorcycles_Vor                cat 17    ROAD      
+vehiclecategory CATEGORY_AIRCRAFT         Police_Responder               cat 18    AIR       
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_EMERGENCY
+;--------------------------------------------------------------------------------;                   
+
+collect Police_Squaddie                token  buy_in_shop          0   cat 12   	group 0                         cheat_code xgccjf                   
+collect Police_Bastion                 token  buy_in_shop       0   cat 12   	group 8                         level 0          cheat_code MNEVP4           
+collect Police_Chaser                  token  buy_in_shop       0   cat 12   	group 8                         district 19         cheat_code WE9WK8           
+collect Police_DunbyPatrollo           token  buy_in_shop       0   cat 12   	group 5                         district 15         cheat_code ggccck           
+collect 2016_Police_Dasher             token  buy_in_shop       0   cat 12   	group 8                         district 18    
+collect 2016_Police_Detainer           token  buy_in_shop       0   cat 12   	group 8                         district 8
+collect Police_Hero                    token  buy_in_shop     0   cat 12   	group 16                        district 3          cheat_code vvxcpm           
+collect Police_Imprisoner              token  buy_in_shop       0   cat 12   	group 8                         district 0          cheat_code fsmynm           
+collect Police_MOV_Cab                 token  buy_in_shop      0   cat 12   	group 5                         district 10         cheat_code sdvkrg           
+collect 2016_Police_Rescuer            token  buy_in_shop       0   cat 12   	group 8                         district 16
+collect Police_Rino                    token  buy_in_shop       0   cat 12   	group 4                         level 1          cheat_code tjymzv           
+collect Police_Tracker                 token  buy_in_shop        0   cat 12   	group 3                         district 3          cheat_code bbnpwh                 
+collect Police_TREV                    token  buy_in_shop       0   cat 12   	group 11                        district 13         cheat_code jnsvpp           
+collect Police_Trooper                 token  buy_in_shop       0   cat 12   	group 1                         district 2          cheat_code V6LK8G  
+collect Fire_Douser                    token  buy_in_shop       0   cat 12   	group 12                        district 17         cheat_code fgggjt           
+collect Fire_Extender                  token  buy_in_shop       0   cat 12   	group 0                         level 8          cheat_code rgrbvy           
+collect Fire_Inferno                   token  buy_in_shop       0   cat 12   	group 12                        district 17         cheat_code gfssmb           
+collect Fire_Tracker                   token  buy_in_shop        0   cat 12   	group 0                         level 8          cheat_code chknrh           
+collect Hospital_Panacea               token  buy_in_shop       0   cat 12   	group 0                         district 17         cheat_code xhggfg           
+collect Police_Vigilant                token  buy_in_shop       0   cat 12   	group 13                        district 3          cheat_code wrpyhw           
+collect Police_Justice                 token  buy_in_shop       0   cat 12   	group 13                        district 10
+collect 2016_Police_Pursuer            token  buy_in_shop       0   cat 12   	group 8                                       no_progress
+; BONUS MISSION VEHICLE MUST BE LAST IN CATEGORY
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_WORKER
+;--------------------------------------------------------------------------------;
+collect Farm_Armadillo                 token  buy_in_shop       0   cat 13   	group 3                         district 2          cheat_code vzpxwd           
+collect Industrial_Atlas               token  buy_in_shop       0   cat 13   	group 9                         district 9          cheat_code mwhfhk           
+collect Industrial_Brawn               token  buy_in_shop       0   cat 13   	group 2                         district 1          cheat_code mxdcby           
+collect Civic_Bristler                 token  buy_in_shop        0   cat 13   	group 0                         district 16         cheat_code qxwhjz           
+collect Industrial_Dragger             token  buy_in_shop       0   cat 13   	group 0                         district 1          cheat_code njdbys           
+collect Industrial_Dumper              token  buy_in_shop      0   cat 13   	group 16                        level 2          cheat_code gmgjts           
+collect Civic_Epona                    token  buy_in_shop       0   cat 13   	group 0                         district 11         cheat_code mfggwb           
+collect Industrial_Foundation          token  buy_in_shop       0   cat 13   	group 13                        level 11         cheat_code bvjgvp           
+collect Civic_Hazard                   token  buy_in_shop       0   cat 13   	group 0                         district 21         cheat_code wtfvmk           
+collect SaloonCars_Indulga             token  buy_in_shop      0   cat 13   	group 5                         district 14         cheat_code cdxptp           
+collect Industrial_PKML                token  buy_in_shop      0   cat 13   	group 16                        district 16         cheat_code wsxzxh           
+collect Industrial_Payload             token  buy_in_shop      0   cat 13   	group 15                        level 14         cheat_code sfvrgp           
+collect Industrial_Protector           token  buy_in_shop      0   cat 13   	group 13                        district 10         cheat_code mhqbcv           
+collect Industrial_Relocator           token  buy_in_shop      0   cat 13   	group 13                        level 4          cheat_code NKHRL4C //PROMO           
+collect Industrial_Roller              token  buy_in_shop       0   cat 13   	group 14                        level 11         cheat_code znpvhz           
+collect Industrial_Shifter             token  buy_in_shop       0   cat 13   	group 5                         district 10         cheat_code gbqcby           
+collect Industrial_Slicker             token  buy_in_shop       0   cat 13   	group 0                         district 2          cheat_code vwpxry           
+collect 2016_Civic_Slogger             token  buy_in_shop       0   cat 13   	group 0                         district 9                    
+collect Industrial_Steadfast           token  buy_in_shop       0   cat 13   	group 0                         level 2          cheat_code rpjhhm           
+collect Civic_TaxiCab                  token  buy_in_shop      0   cat 13   	group 5                         district 16         cheat_code ybbqrr           
+collect Civic_Trasher                  token  buy_in_shop       0   cat 13   	group 0                         district 1          cheat_code mjdfrv           
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_COMPACT
+;--------------------------------------------------------------------------------;
+collect SmallCars_Aceso                token  buy_in_shop       0   cat 14   	group 0                         level 10         cheat_code jksgwy           
+collect SaloonCars_Ancestor            token  buy_in_shop     0   cat 14   	group 16                        level 7          cheat_code nqbsrp           
+collect SaloonCars_Arbalest            token  buy_in_shop       0   cat 14   	group 11                        district 16         cheat_code mgmmch           
+collect SaloonCars_Cabrakan            token  buy_in_shop       0   cat 14   	group 0                         district 7          cheat_code ncvnxv           
+collect SmallCars_Crater               token  buy_in_shop       0   cat 14   	group 11                        district 18         cheat_code tgygcc           
+collect SmallCars_Grassman             token  buy_in_shop       0   cat 14   	group 11                        district 0          cheat_code yrmzbm           
+collect SaloonCars_Downforce           token  buy_in_shop       0   cat 14   	group 0                         district 16         cheat_code pspdbp           
+collect SmallCars_Earwig               token  buy_in_shop       0   cat 14   	group 13                        district 15         cheat_code chjdzr           
+collect SaloonCars_Flare               token  buy_in_shop       0   cat 14   	group 6                         district 21         cheat_code qqznfg           
+collect SaloonCars_Hestia              token  buy_in_shop       0   cat 14   	group 0                         district 21         cheat_code bcvydn           
+collect SaloonCars_Jalopy              token  buy_in_shop       0   cat 14   	group 0                         level 6          cheat_code mfrxrf           
+collect SmallCars_Pumpkin              token  buy_in_shop       0   cat 14   	group 0                         district 0          cheat_code vmsxjn           
+collect Uber_Galican                   token  buy_in_shop      0   cat 14   	group 50                        district 20         cheat_code rqyvkq           
+collect SaloonCars_Schmoozer           token  buy_in_shop       0   cat 14   	group 0                         level 6          cheat_code mnvfwq           
+collect SmallCars_Sevila               token  buy_in_shop       0   cat 14   	group 0                         district 16         cheat_code phxvrg           
+collect SmallCars_Smallisimo           token  buy_in_shop      0   cat 14   	group 11                        district 21         cheat_code rypncv           
+collect SmallCars_Squeaky              token  buy_in_shop       0   cat 14   	group 11                        district 18         cheat_code nkhqdj           
+collect SmallCars_Talos                token  buy_in_shop       0   cat 14   	group 5                         district 11         cheat_code yvmsny           
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_HEAVY
+;--------------------------------------------------------------------------------;
+collect Van_Broadcaster                token  buy_in_shop       0   cat 15   	group 0                         level 0          cheat_code jkjckj           
+collect Space_Cocoon                   token  buy_in_shop      0   cat 15   	group 0                         district 9          cheat_code nbhhzv           
+collect SUV_Galleon                    token  buy_in_shop      0   cat 15   	group 7                         district 11         cheat_code nmzdyp           
+collect Van_Garrano                    token  buy_in_shop       0   cat 15   	group 0                         level 5          cheat_code vqgytd           
+collect Van_Gotland                    token  buy_in_shop       0   cat 15   	group 5                         level 4          cheat_code kgfcvb           
+collect 2016_SUV_Giant	               token  buy_in_shop       0   cat 15   	group 8                         district 17 
+collect 2016_Van_Hanker                token  buy_in_shop       0   cat 15   	group 8                         district 19
+collect SUV_Ironback                   token  buy_in_shop      0   cat 15   	group 13                        level 10         cheat_code jyfcsb           
+collect Chans_Ironback                 token  buy_in_shop      0   cat 15   	group 16                        district 3          cheat_code bvrnnj           
+collect Space_LERV                     token  buy_in_shop       0   cat 15   	group 11                        level 5          cheat_code yckxnd           
+collect Van_Muncher                    token  buy_in_shop       0   cat 15   	group 5                         district 18         cheat_code ypvswy           
+collect Van_Oldster                    token  buy_in_shop      0   cat 15   	group 5                         district 3          cheat_code xshxxb           
+collect Uber_Riot                      token  buy_in_shop      0   cat 15   	group 50                        district 1          cheat_code pnqsnx           
+collect SUV_Rugged                     token  buy_in_shop       0   cat 15   	group 3                         district 10         cheat_code gtmkvn           
+collect Van_Squadmobile                token  buy_in_shop      0   cat 15   	group 16                        district 18         cheat_code vwjdpt           
+collect SUV_Torsion                    token  buy_in_shop       0   cat 15   	group 0                         district 2          cheat_code shtkgj           
+collect SUV_Transter                   token  buy_in_shop       0   cat 15   	group 3                         district 18         cheat_code kdthtc           
+collect Van_Wanderer                   token  buy_in_shop       0   cat 15   	group 0                         district 9          cheat_code qbjvzd           
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_PERFORMANCE
+;--------------------------------------------------------------------------------;
+collect MuscleCars_Athena              token  buy_in_shop      0   cat 16   	group 7                         district 11         cheat_code bxqtqx           
+collect MuscleCars_Bearer              token  buy_in_shop      0   cat 16   	group 7                         district 15         cheat_code yxnyjk           
+collect SportsCars_Drakonas            token  buy_in_shop      0   cat 16   	group 13                        district 15         cheat_code TQ53GQB //PROMO       
+collect Chans_Drakonas                 token  buy_in_shop     0   cat 16   	group 7                         district 14         cheat_code HPWLHNA //PROMO         
+collect SportsCars_Dullahan            token  buy_in_shop       0   cat 16   	group 0                         level 13         cheat_code cfyjps           
+collect MuscleCars_Enberg              token  buy_in_shop      0   cat 16   	group 0                         district 1          cheat_code cxmtyw           
+collect MuscleCars_FalchionGT          token  buy_in_shop      0   cat 16   	group 5                         district 18         cheat_code srrrvv           
+collect SportsCars_Gersemi             token  buy_in_shop      0   cat 16   	group 13                        district 19         cheat_code gkmjzg           
+collect SportsCars_Lantos              token  buy_in_shop      0   cat 16   	group 16                        district 0          cheat_code mjzqkm           
+collect SportsCars_Cetan               token  buy_in_shop      0   cat 16   	group 13                        district 19         cheat_code mtmbvm           
+collect SportsCars_Lusca               token  buy_in_shop      0   cat 16   	group 5                         district 11         cheat_code mgvvsw           
+collect MuscleCars_Narym               token  buy_in_shop      0   cat 16   	group 16                        district 15         cheat_code gwjpwg           
+collect SportsCars_Roar                token  buy_in_shop      0   cat 16   	group 11                        level 3          cheat_code gwxssc           
+collect SportsCars_Scout               token  buy_in_shop      0   cat 16   	group 13                        level 9          cheat_code xrpyzn           
+collect MuscleCars_Silversmith         token  buy_in_shop      0   cat 16   	group 13                        level 7          cheat_code qgczqs           
+collect MuscleCars_Sphinx              token  buy_in_shop      0   cat 16   	group 13                        district 1          cheat_code gbfgbj           
+collect MuscleCars_Tigerella           token  buy_in_shop      0   cat 16   	group 11                        district 14         cheat_code whfpss           
+collect SportsCars_Valkyrie            token  buy_in_shop      0   cat 16   	group 13                        district 0          cheat_code phfdhm           
+collect SportsCars_Wrath               token  buy_in_shop     0   cat 16   	group 16                        district 5          cheat_code zspqhx           
+collect SportsCars_Spirit              token  buy_in_shop      0   cat 16   	group 16                        district 11
+collect 2016_SportsCars_Rebellion      token  buy_in_shop       0   cat 16   	group 8                                    no_progress
+; BONUS MISSION VEHICLE MUST BE LAST IN CATEGORY
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_BIKES
+;--------------------------------------------------------------------------------;
+collect Motorcycles_Buzzer             token  buy_in_shop       0   cat 17   	group 0                         level 9          cheat_code fwqxgv           
+collect Uber_Brute                     token  buy_in_shop      0   cat 17   	group 50                        level 12         cheat_code ydrszs           
+collect Motorcycles_Grounddog          token  buy_in_shop      0   cat 17   	group 5                         district 10         cheat_code syhjmz           
+collect Motorcycles_Hairdryer          token  buy_in_shop       0   cat 17   	group 5                         level 3          cheat_code zgnjpf           
+collect 2016_Motorcycles_Nipper        token  buy_in_shop       0   cat 17   	group 8                         district 13
+collect Motorcycles_Redeemer           token  buy_in_shop      0   cat 17   	group 16                        district 7          cheat_code zkjcbh           
+collect Motorcycles_Revolver           token  buy_in_shop       0   cat 17   	group 5                         district 0          cheat_code sxbjqb           
+collect Motorcycles_Roamer             token  buy_in_shop       0   cat 17   	group 11                        level 1          cheat_code wskgkn           
+collect Motorcycles_Sweetie            token  buy_in_shop        0   cat 17   	group 5                         district 11         cheat_code jpwxgd           
+collect Motorcycles_Vor                token  buy_in_shop       0   cat 17   	group 5                         district 10         cheat_code qxyxjq           
+collect Novelty_Washwagon              token  buy_in_shop       0   cat 17   	group 50                        district 9          cheat_code ckbjkv           
+
+;--------------------------------------------------------------------------------;
+; CATEGORY_AIRCRAFT
+;--------------------------------------------------------------------------------;
+collect Fire_Camel                     token  buy_in_shop      0   cat 18   	group 50                        district 10         cheat_code dgmydj           
+collect Police_Chopper                 token  buy_in_shop      0   cat 18   	group 50                        district 8          cheat_code stvqnm           
+collect Aircraft_Cloud                 token  buy_in_shop     0   cat 18   	group 50                        level 13         cheat_code mbrzhv           
+collect Aircraft_Hera                  token  buy_in_shop       0   cat 18   	group 50                        district 1          cheat_code ngqctt           
+collect Aircraft_Jupiter               token  buy_in_shop      0   cat 18   	group 50                        level 12         cheat_code yjmsjn           
+collect 2016_Police_Guardian           token  buy_in_shop       0   cat 18   	group 8                         district 7      
+collect Police_Responder               token  buy_in_shop      0   cat 18   	group 50                        district 0          cheat_code tksxpg           
+collect Police_Skybringer              token  buy_in_shop      0   cat 18   	group 50                        district 3          cheat_code vczkvk           
+collect Hospital_Swooper               token  buy_in_shop       0   cat 18   	group 50                        district 17         cheat_code bspzdf           
+collect Uber_Tempest                   token  buy_in_shop    0   cat 18   	group 50                        level 14         cheat_code gysmzz           
+collect Aircraft_UFO                   token  buy_in_shop       0   cat 18   	group 50                        district 9          cheat_code nzzjnn           
+;VEHICLE_LIST_END
